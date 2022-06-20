@@ -1,0 +1,35 @@
+<h1 mat-dialog-title>Añadir Producto</h1>
+<div mat-dialog-content>
+    <form [formGroup]="productForm">
+
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre del producto</mat-label>
+            <input formControlName="name" matInput placeholder="">
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Categoria</mat-label>
+            <mat-select formControlName="categoria" placeholder="">
+                <mat-option value="Frutas">Frutas</mat-option>
+                <mat-option value="Vegetales">Vegetales</mat-option>
+            </mat-select>
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+            <mat-label>Descripción</mat-label>
+            <textarea formControlName="description" matInput placeholder=""></textarea>
+        </mat-form-field>
+    
+        <label for=""><h1>Frescura</h1></label>
+        <mat-radio-group formControlName="frescura" class="example-radio-group">
+            <mat-radio-button clas="example-radio-button" *ngFor="let fresh of frescuraList" [value]="fresh">
+                {{fresh}}
+            </mat-radio-button>
+        </mat-radio-group>
+    </form>
+</div>
+
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Cerrar</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addProduct()">{{actionBtn}}</button>
+</div>

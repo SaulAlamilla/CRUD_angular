@@ -1,0 +1,32 @@
+{
+  "productList": [
+    {
+      "name": "Manzana verde",
+      "categoria": "Frutas",
+      "description": "Fruta fresca",
+      "frescura": "Brand new",
+      "id": 1
+    },
+    {
+      "name": "Papa",
+      "categoria": "Vegetales",
+      "description": "Papa un poco verde",
+      "frescura": "Second hand",
+      "id": 2
+    },
+    {
+      "name": "Sandia",
+      "categoria": "Frutas",
+      "description": "Sandia sin semilla",
+      "frescura": "Brand new",
+      "id": 3
+    },
+    {
+      "name": "Melón",
+      "categoria": "Frutas",
+      "description": "Melon pequeño",
+      "frescura": "Brand new",
+      "id": 4
+    }
+  ]
+}
