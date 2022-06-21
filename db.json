@@ -1,32 +1,45 @@
 {
-  "productList": [
+  "students": [
     {
-      "name": "Manzana verde",
-      "categoria": "Frutas",
-      "description": "Fruta fresca",
-      "frescura": "Brand new",
-      "id": 1
+      "nombres": "Marco Aldair",
+      "paterno": "De Jesus",
+      "materno": "Caceres",
+      "numcontrol": "18390027",
+      "proyecto": "Drones",
+      "id": 4,
+      "projectId":2
     },
     {
-      "name": "Papa",
-      "categoria": "Vegetales",
-      "description": "Papa un poco verde",
-      "frescura": "Second hand",
-      "id": 2
+      "nombres": "Brayan",
+      "paterno": "Pineda",
+      "materno": "Mendez",
+      "numcontrol": "18390020",
+      "proyecto": 1,
+      "id": 5,
+      "projectId":2
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "nombre": "",
+      "descripcion": "",
+      "encargado": "",
+      "area": ""
     },
     {
-      "name": "Sandia",
-      "categoria": "Frutas",
-      "description": "Sandia sin semilla",
-      "frescura": "Brand new",
-      "id": 3
+      "id": 2,
+      "nombre": "Proyecto 2",
+      "descripcion": "Descripcion 2",
+      "encargado": "Encargado 2",
+      "area": "Area 2"
     },
     {
-      "name": "Melón",
-      "categoria": "Frutas",
-      "description": "Melon pequeño",
-      "frescura": "Brand new",
-      "id": 4
+      "id": 3,
+      "nombre": "Proyecto 3",
+      "descripcion": "Descripcion 3",
+      "encargado": "Encargado 3",
+      "area": "Area 3"
     }
   ]
 }

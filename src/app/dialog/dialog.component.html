@@ -1,31 +1,42 @@
-<h1 mat-dialog-title>Añadir Producto</h1>
+<h1 mat-dialog-title>Asignar proyecto</h1>
 <div mat-dialog-content>
     <form [formGroup]="productForm">
 
         <mat-form-field appearance="outline">
-            <mat-label>Nombre del producto</mat-label>
-            <input formControlName="name" matInput placeholder="">
+            <mat-label>Nombre del alumno</mat-label>
+            <input formControlName="nombres" matInput placeholder="">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Apellido paterno</mat-label>
+            <input formControlName="paterno" matInput placeholder="">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Apellido materno</mat-label>
+            <input formControlName="materno" matInput placeholder="">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Número de control</mat-label>
+            <input formControlName="numcontrol" matInput placeholder="">
         </mat-form-field>
     
         <mat-form-field appearance="outline">
-            <mat-label>Categoria</mat-label>
-            <mat-select formControlName="categoria" placeholder="">
-                <mat-option value="Frutas">Frutas</mat-option>
-                <mat-option value="Vegetales">Vegetales</mat-option>
+            <mat-label>Proyecto</mat-label>
+            <mat-select formControlName="proyecto" placeholder="">
+                <mat-option value="Modelos 3D">Modelos 3D</mat-option>
+                <mat-option value="Módulo de estudio de mercado">Módulo de estudio de mercado</mat-option>
+                <mat-option value="Drones">Drones</mat-option>
             </mat-select>
         </mat-form-field>
     
-        <mat-form-field appearance="outline">
-            <mat-label>Descripción</mat-label>
-            <textarea formControlName="description" matInput placeholder=""></textarea>
-        </mat-form-field>
-    
-        <label for=""><h1>Frescura</h1></label>
+        <!--<label for=""><h1>Frescura</h1></label>
         <mat-radio-group formControlName="frescura" class="example-radio-group">
             <mat-radio-button clas="example-radio-button" *ngFor="let fresh of frescuraList" [value]="fresh">
                 {{fresh}}
             </mat-radio-button>
-        </mat-radio-group>
+        </mat-radio-group>-->
     </form>
 </div>
 

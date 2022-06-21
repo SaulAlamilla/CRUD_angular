@@ -11,7 +11,7 @@ import { ApiService } from './services/api.service';
 })
 export class AppComponent implements OnInit{
   title = 'CRUD_angular';
-  displayedColumns: string[] = ['name', 'categoria', 'description', 'frescura', 'actions'];
+  displayedColumns: string[] = ['nombres', 'paterno', 'materno', 'numcontrol', 'proyecto', 'actions'];
   dataSource !: MatTableDataSource<any>;
 
   constructor(private dialog: MatDialog, private api: ApiService) {}
@@ -62,4 +62,6 @@ export class AppComponent implements OnInit{
       }
     })
   }
+
+  
 }

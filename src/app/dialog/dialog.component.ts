@@ -21,10 +21,11 @@ export class DialogComponent implements OnInit {
 
   ngOnInit(): void {
     this.productForm = this.FormBuilder.group({
-      name: ['', Validators.required],
-      categoria: ['', Validators.required],
-      description: ['', Validators.required],
-      frescura: ['', Validators.required]
+      nombres: ['', Validators.required],
+      paterno: ['', Validators.required],
+      materno: ['', Validators.required],
+      numcontrol: ['', Validators.required],
+      proyecto: ['', Validators.required],
     });
     //Colocar los elementos de la base de datos en el formulario
     if(this.editData){
