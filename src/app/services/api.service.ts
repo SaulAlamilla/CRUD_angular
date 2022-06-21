@@ -10,16 +10,16 @@ export class ApiService {
 
   constructor(private http : HttpClient) { }
 
-  postProduct(data: any){
+  postStudent(data: any){
     return this.http.post<any>(this.STUDENTURL, data);
   }
-  getProduct(){
+  getStudents(){
     return this.http.get<any>(this.STUDENTURL);
   }
-  putProduct(data: any, id: number){
+  putStudent(data: any, id: number){
     return this.http.put<any>(this.STUDENTURL+id, data);
   }
-  deleteProduct(id: number){
+  deleteStudent(id: number){
     return this.http.delete<any>(this.STUDENTURL+id);
   }
 

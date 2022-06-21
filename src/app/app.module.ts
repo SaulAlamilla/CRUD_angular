@@ -17,11 +17,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { AppRoutingModule } from './app-routing.module';
+import { StudentsComponent } from './students/students.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogComponent,
+    StudentsComponent,
   ],
   imports: [
     BrowserModule,

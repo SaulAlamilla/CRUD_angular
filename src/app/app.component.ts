@@ -17,17 +17,19 @@ export class AppComponent implements OnInit{
   constructor(private dialog: MatDialog, private api: ApiService) {}
 
   ngOnInit(): void {
-    this.getAllProducts();
+    //this.getAllProducts();
   }
   openDialog() {
     this.dialog.open(DialogComponent, {
       width: '30%',
     }).afterClosed().subscribe(result => {//Para actualizar la tabla
       if(result == 'agregado'){
-        this.getAllProducts();
+        //this.getAllProducts();
       }
     });
   }
+
+  /*
   getAllProducts(){
     this.api.getProduct()
     .subscribe({
@@ -43,7 +45,7 @@ export class AppComponent implements OnInit{
   editProduct(element: any){
     this.dialog.open(DialogComponent, {
       width: '30%',
-      data: element 
+      data: element
     }).afterClosed().subscribe(result => {//Para actualizar la tabla
       if(result == 'actualizado'){
         this.getAllProducts();
@@ -62,6 +64,6 @@ export class AppComponent implements OnInit{
       }
     })
   }
+*/
 
-  
 }
