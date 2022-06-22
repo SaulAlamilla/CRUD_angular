@@ -14,7 +14,7 @@ export class DialogComponent implements OnInit {
   actionBtn : string = "Guardar";
 
   projectSelect ?: Array<any>
-  
+
   constructor(private FormBuilder : FormBuilder,
     private api : ApiService,
     @Inject(MAT_DIALOG_DATA) public editData: any,
@@ -26,7 +26,6 @@ export class DialogComponent implements OnInit {
       paterno: ['', Validators.required],
       materno: ['', Validators.required],
       numcontrol: ['', Validators.required],
-      proyecto: ['', Validators.required],
       projectId: ['', Validators.required],
     });
     //Colocar los elementos de la base de datos en el formulario
@@ -74,7 +73,6 @@ export class DialogComponent implements OnInit {
     this.api.getProjects().subscribe({
       next:(value) => {
         this.projectSelect = value
-        console.log(value);
       },
       error:(err) => {
         alert("Error getting projects");

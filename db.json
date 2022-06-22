@@ -5,7 +5,6 @@
       "paterno": "De Jesus",
       "materno": "Caceres",
       "numcontrol": "18390027",
-      "proyecto": "Proyecto 3",
       "projectId": 3,
       "id": 4
     },
@@ -14,9 +13,16 @@
       "paterno": "Pineda",
       "materno": "Mendez",
       "numcontrol": "18390020",
-      "proyecto": "Proyecto 2",
       "projectId": 2,
       "id": 5
+    },
+    {
+      "nombres": "Saul",
+      "paterno": "Alamilla",
+      "materno": "Cali",
+      "numcontrol": "18390023",
+      "projectId": 3,
+      "id": 6
     }
   ],
   "projects": [

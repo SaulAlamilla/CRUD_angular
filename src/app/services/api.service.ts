@@ -41,4 +41,8 @@ export class ApiService {
   deleteProject(id: number){
     return this.http.delete<any>(this.PROJECTURL+id);
   }
+
+  getProjectById(id: any){
+    return this.http.get<any>(this.PROJECTURL+id)
+  }
 }

@@ -24,10 +24,9 @@
     
         <mat-form-field appearance="outline">
             <mat-label>Proyecto</mat-label>
-            <mat-select formControlName="proyecto" placeholder="">
-                <mat-option *ngFor="let pro of projectSelect" [value]="pro.nombre">
+            <mat-select formControlName="projectId" placeholder="">
+                <mat-option *ngFor="let pro of projectSelect" [value]="pro.id">
                     {{pro.nombre}}
-
                 </mat-option>
             </mat-select>
         </mat-form-field>

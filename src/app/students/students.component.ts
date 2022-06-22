@@ -13,12 +13,15 @@ export class StudentsComponent implements OnInit {
   displayedColumns: string[] = ['nombres', 'paterno', 'materno', 'numcontrol', 'proyecto', 'actions'];
   students !: MatTableDataSource<any>;
 
+  //Para obtener el nombre del proyecto
+  projectName ?: String;
+
   constructor(private dialog: MatDialog, private api: ApiService) {
 
   }
 
   ngOnInit(): void {
-    this.getStudents();
+    this.getStudents();    
   }
 
   openDialog() {
@@ -36,7 +39,7 @@ export class StudentsComponent implements OnInit {
     .subscribe({
       next:(value) => {
         this.students = new MatTableDataSource(value);
-        //console.log(value);
+        console.log("ProjectId: "+value[1].projectId);
       },
       error:(err) => {
         alert("Error getting products");
@@ -68,4 +71,18 @@ export class StudentsComponent implements OnInit {
     });
   }
 
+  getProjectName(id: any){
+    console.log("executed!!");
+    
+    this.api.getProjectById(id).subscribe({
+      next: (res) => {
+        this.projectName = res.nombre;
+        console.log("Exceuted!!"+this.projectName);
+      },
+      error:() => {
+        console.log("Error load project");
+        
+      }
+    })
+  }
 }
