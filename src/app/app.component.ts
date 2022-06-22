@@ -12,8 +12,6 @@ import { StudentsComponent } from './students/students.component';
 })
 export class AppComponent implements OnInit{
   title = 'CRUD_angular';
-  displayedColumns: string[] = ['nombres', 'paterno', 'materno', 'numcontrol', 'proyecto', 'actions'];
-  dataSource !: MatTableDataSource<any>;
 
   constructor(private dialog: MatDialog, private api: ApiService) {}
 

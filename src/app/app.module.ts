@@ -18,12 +18,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { AppRoutingModule } from './app-routing.module';
 import { StudentsComponent } from './students/students.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { DialogProjectComponent } from './dialog-project/dialog-project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogComponent,
     StudentsComponent,
+    ProjectsComponent,
+    DialogProjectComponent
   ],
   imports: [
     BrowserModule,

@@ -29,18 +29,11 @@
   ],
   "projects": [
     {
-      "id": 1,
-      "nombre": "",
-      "descripcion": "",
-      "encargado": "",
-      "area": ""
-    },
-    {
-      "id": 2,
       "nombre": "Proyecto 2",
       "descripcion": "Descripcion 2",
       "encargado": "Encargado 2",
-      "area": "Area 2"
+      "area": "Area 2",
+      "id": 2
     },
     {
       "id": 3,

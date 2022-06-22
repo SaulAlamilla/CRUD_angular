@@ -24,7 +24,18 @@ export class ApiService {
   }
 
 
+
+  //Projects
   getProjects(){
     return this.http.get<any>(this.PROJECTURL);
+  }
+
+
+  putProject(data: any, id: number){
+    return this.http.put<any>(this.PROJECTURL+id, data);
+  }
+
+  deleteProject(id: number){
+    return this.http.delete<any>(this.PROJECTURL+id);
   }
 }

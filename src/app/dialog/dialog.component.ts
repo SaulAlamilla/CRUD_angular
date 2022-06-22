@@ -52,7 +52,6 @@ export class DialogComponent implements OnInit {
     }else{
       this.actualizarProducto();
     }
-    //console.log(this.productForm.value);
   }
   actualizarProducto(){
     this.api.putStudent(this.productForm.value, this.editData.id)
