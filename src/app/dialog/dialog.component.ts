@@ -10,7 +10,6 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class DialogComponent implements OnInit {
 
-  frescuraList = ["Brand new", "Second hand"];
   productForm !: FormGroup;
   actionBtn : string = "Guardar";
 
@@ -40,12 +39,12 @@ export class DialogComponent implements OnInit {
         this.api.postStudent(this.productForm.value)
         .subscribe({
           next: (res) => {
-            alert("Product added successfully");
+            alert("Student added successfully");
             this.productForm.reset();
             this.dialogRef.close('agregado');
           },
           error:() => {
-            alert("Error adding product");
+            alert("Error adding student");
           }
         });
       }
@@ -57,12 +56,12 @@ export class DialogComponent implements OnInit {
     this.api.putStudent(this.productForm.value, this.editData.id)
     .subscribe({
       next: (res) => {
-        alert("Product updated successfully");
+        alert("Student updated successfully");
         this.productForm.reset();
         this.dialogRef.close('actualizado');
       },
       error:() => {
-        alert("Error updating product");
+        alert("Error updating student");
       }
     })
   }

@@ -30,7 +30,7 @@ export class ProjectsComponent implements OnInit {
         this.projects = new MatTableDataSource(value);
       },
       error:(err) => {
-        alert("Error getting products");
+        alert("Error getting projects");
       }
     });
   }
@@ -62,5 +62,14 @@ export class ProjectsComponent implements OnInit {
         }
       }
     );
+  }
+  openDialog() {
+    this.dialog.open(DialogProjectComponent, {
+      width: '30%',
+    }).afterClosed().subscribe(result => {//Para actualizar la tabla
+      if(result == 'agregado'){
+        this.getProjects();
+      }
+    });
   }
 }

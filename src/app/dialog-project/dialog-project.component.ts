@@ -37,10 +37,10 @@ export class DialogProjectComponent implements OnInit {
   addProject(){
     if(!this.editData){
       if(this.projectForm.valid){
-        this.api.postStudent(this.projectForm.value)
+        this.api.postProject(this.projectForm.value)
         .subscribe({
           next: (res) => {
-            alert("Product added successfully");
+            alert("Project added successfully");
             this.projectForm.reset();
             this.dialogRef.close('agregado');
           },
@@ -58,12 +58,12 @@ export class DialogProjectComponent implements OnInit {
     this.api.putProject(this.projectForm.value,this.editData.id)
     .subscribe({
       next: (res) => {
-        alert("Product updated successfully");
+        alert("Project updated successfully");
         this.projectForm.reset();
         this.dialogRef.close('updated');
       },
       error:() => {
-        alert("Error updating product");
+        alert("Error updating project");
       }
     })
   }

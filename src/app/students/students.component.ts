@@ -48,11 +48,11 @@ export class StudentsComponent implements OnInit {
     this.api.deleteStudent(id)
     .subscribe({
       next: (res) => {
-        alert("Product deleted successfully");
+        alert("Student deleted successfully");
         this.getStudents();
       },
       error:() => {
-        alert("Error deleting product");
+        alert("Error deleting student");
       }
     })
   }
