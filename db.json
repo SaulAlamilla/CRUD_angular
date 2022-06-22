@@ -5,26 +5,18 @@
       "paterno": "De Jesus",
       "materno": "Caceres",
       "numcontrol": "18390027",
-      "proyecto": "Drones",
-      "id": 4,
-      "projectId": 2
+      "proyecto": "Proyecto 3",
+      "projectId": 3,
+      "id": 4
     },
     {
       "nombres": "Brayan",
       "paterno": "Pineda",
       "materno": "Mendez",
       "numcontrol": "18390020",
-      "proyecto": 1,
-      "id": 5,
-      "projectId": 2
-    },
-    {
-      "nombres": "Luis",
-      "paterno": "Perez",
-      "materno": "Perez",
-      "numcontrol": "18390555",
-      "proyecto": "Drones",
-      "id": 6
+      "proyecto": "Proyecto 2",
+      "projectId": 2,
+      "id": 5
     }
   ],
   "projects": [
@@ -41,6 +33,13 @@
       "descripcion": "Descripcion 3",
       "encargado": "Encargado 3",
       "area": "Area 3"
+    },
+    {
+      "nombre": "Proyecto 4",
+      "descripcion": "Descripcion 4",
+      "encargado": "Encargado 4",
+      "area": "Area 4",
+      "id": 4
     }
   ]
 }

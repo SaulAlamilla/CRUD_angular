@@ -13,6 +13,8 @@ export class DialogComponent implements OnInit {
   productForm !: FormGroup;
   actionBtn : string = "Guardar";
 
+  projectSelect ?: Array<any>
+  
   constructor(private FormBuilder : FormBuilder,
     private api : ApiService,
     @Inject(MAT_DIALOG_DATA) public editData: any,
@@ -25,12 +27,14 @@ export class DialogComponent implements OnInit {
       materno: ['', Validators.required],
       numcontrol: ['', Validators.required],
       proyecto: ['', Validators.required],
+      projectId: ['', Validators.required],
     });
     //Colocar los elementos de la base de datos en el formulario
     if(this.editData){
       this.actionBtn = "Actualizar";
       this.productForm.patchValue(this.editData);
     }
+    this.getProjects()
   }
 
   addProduct(){
@@ -64,5 +68,17 @@ export class DialogComponent implements OnInit {
         alert("Error updating student");
       }
     })
+  }
+
+  getProjects(){
+    this.api.getProjects().subscribe({
+      next:(value) => {
+        this.projectSelect = value
+        console.log(value);
+      },
+      error:(err) => {
+        alert("Error getting projects");
+      }
+    });
   }
 }
