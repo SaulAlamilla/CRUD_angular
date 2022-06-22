@@ -7,7 +7,7 @@
       "numcontrol": "18390027",
       "proyecto": "Drones",
       "id": 4,
-      "projectId":2
+      "projectId": 2
     },
     {
       "nombres": "Brayan",
@@ -16,7 +16,15 @@
       "numcontrol": "18390020",
       "proyecto": 1,
       "id": 5,
-      "projectId":2
+      "projectId": 2
+    },
+    {
+      "nombres": "Luis",
+      "paterno": "Perez",
+      "materno": "Perez",
+      "numcontrol": "18390555",
+      "proyecto": "Drones",
+      "id": 6
     }
   ],
   "projects": [

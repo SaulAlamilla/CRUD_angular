@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatTableDataSource } from '@angular/material/table';
 import { DialogComponent } from './dialog/dialog.component';
 import { ApiService } from './services/api.service';
+import { StudentsComponent } from './students/students.component';
 
 @Component({
   selector: 'app-root',
@@ -17,53 +18,7 @@ export class AppComponent implements OnInit{
   constructor(private dialog: MatDialog, private api: ApiService) {}
 
   ngOnInit(): void {
-    //this.getAllProducts();
-  }
-  openDialog() {
-    this.dialog.open(DialogComponent, {
-      width: '30%',
-    }).afterClosed().subscribe(result => {//Para actualizar la tabla
-      if(result == 'agregado'){
-        //this.getAllProducts();
-      }
-    });
-  }
 
-  /*
-  getAllProducts(){
-    this.api.getProduct()
-    .subscribe({
-      next:(value) => {
-        this.dataSource = new MatTableDataSource(value);
-        //console.log(value);
-      },
-      error:(err) => {
-        alert("Error getting products");
-      }
-    })
   }
-  editProduct(element: any){
-    this.dialog.open(DialogComponent, {
-      width: '30%',
-      data: element
-    }).afterClosed().subscribe(result => {//Para actualizar la tabla
-      if(result == 'actualizado'){
-        this.getAllProducts();
-      }
-    });
-  }
-  deleteProduct(id : number){
-    this.api.deleteProduct(id)
-    .subscribe({
-      next: (res) => {
-        alert("Product deleted successfully");
-        this.getAllProducts();
-      },
-      error:() => {
-        alert("Error deleting product");
-      }
-    })
-  }
-*/
 
 }

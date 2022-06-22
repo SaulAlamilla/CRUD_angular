@@ -21,6 +21,16 @@ export class StudentsComponent implements OnInit {
     this.getStudents();
   }
 
+  openDialog() {
+    this.dialog.open(DialogComponent, {
+      width: '30%',
+    }).afterClosed().subscribe(result => {//Para actualizar la tabla
+      if(result == 'agregado'){
+        this.getStudents();
+      }
+    });
+  }
+
   getStudents() {
     this.api.getStudents()
     .subscribe({
@@ -35,7 +45,16 @@ export class StudentsComponent implements OnInit {
   }
 
   deleteStudent(id:number){
-
+    this.api.deleteStudent(id)
+    .subscribe({
+      next: (res) => {
+        alert("Product deleted successfully");
+        this.getStudents();
+      },
+      error:() => {
+        alert("Error deleting product");
+      }
+    })
   }
 
   editStudent(element: any){
