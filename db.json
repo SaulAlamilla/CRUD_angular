@@ -5,7 +5,13 @@
       "paterno": "De Jesus",
       "materno": "Caceres",
       "numcontrol": "18390027",
-      "projectId": 3,
+      "project": {
+        "id": 3,
+        "nombre": "Proyecto 3",
+        "descripcion": "Descripcion 3",
+        "encargado": "Encargado 3",
+        "area": "Area 3"
+      },
       "id": 4
     },
     {
@@ -13,7 +19,13 @@
       "paterno": "Pineda",
       "materno": "Mendez",
       "numcontrol": "18390020",
-      "projectId": 2,
+      "project": {
+        "nombre": "Proyecto 2",
+        "descripcion": "Descripcion 2",
+        "encargado": "Encargado 2",
+        "area": "Area 2",
+        "id": 2
+      },
       "id": 5
     },
     {
@@ -21,8 +33,28 @@
       "paterno": "Alamilla",
       "materno": "Cali",
       "numcontrol": "18390023",
-      "projectId": 3,
+      "project": {
+        "id": 3,
+        "nombre": "Proyecto 3",
+        "descripcion": "Descripcion 3",
+        "encargado": "Encargado 3",
+        "area": "Area 3"
+      },
       "id": 6
+    },
+    {
+      "nombres": "Luis",
+      "paterno": "Perez",
+      "materno": "Perez",
+      "numcontrol": "22390555",
+      "project": {
+        "id": 3,
+        "nombre": "Proyecto 3",
+        "descripcion": "Descripcion 3",
+        "encargado": "Encargado 3",
+        "area": "Area 3"
+      },
+      "id": 7
     }
   ],
   "projects": [

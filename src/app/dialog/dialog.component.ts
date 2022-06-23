@@ -26,7 +26,7 @@ export class DialogComponent implements OnInit {
       paterno: ['', Validators.required],
       materno: ['', Validators.required],
       numcontrol: ['', Validators.required],
-      projectId: ['', Validators.required],
+      project: ['', Validators.required],
     });
     //Colocar los elementos de la base de datos en el formulario
     if(this.editData){
