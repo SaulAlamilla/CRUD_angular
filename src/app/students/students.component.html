@@ -15,41 +15,41 @@
       <!-- Names Column -->
       <ng-container matColumnDef="nombres">
         <th mat-header-cell *matHeaderCellDef> Nombre del alumno </th>
-        <td mat-cell *matCellDef="let element"> {{element.nombres}} </td>
+        <td mat-cell *matCellDef="let student"> {{student.nombres}} </td>
       </ng-container>
 
       <!-- Last name Column -->
       <ng-container matColumnDef="paterno">
         <th mat-header-cell *matHeaderCellDef> Apellido paterno </th>
-        <td mat-cell *matCellDef="let element"> {{element.paterno}} </td>
+        <td mat-cell *matCellDef="let student"> {{student.paterno}} </td>
       </ng-container>
 
       <!-- Mother's last name Column -->
       <ng-container matColumnDef="materno">
         <th mat-header-cell *matHeaderCellDef> Apellido Materno </th>
-        <td mat-cell *matCellDef="let element"> {{element.materno}} </td>
+        <td mat-cell *matCellDef="let student"> {{student.materno}} </td>
       </ng-container>
 
       <!-- Control number Column -->
       <ng-container matColumnDef="numcontrol">
         <th mat-header-cell *matHeaderCellDef> Número de control </th>
-        <td mat-cell *matCellDef="let element"> {{element.numcontrol}} </td>
+        <td mat-cell *matCellDef="let student"> {{student.numcontrol}} </td>
       </ng-container>
 
        <!-- Project Column -->
        <ng-container matColumnDef="proyecto">
         <th mat-header-cell *matHeaderCellDef> Proyecto asignado </th>
-        <td mat-cell *matCellDef="let element"> {{element.project.nombre}} </td>
+        <td mat-cell *matCellDef="let student"> {{student.project.nombre}} </td>
       </ng-container>
 
       <!-- Symbol Column -->
       <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef> Acciones </th>
-        <td mat-cell *matCellDef="let element">
-          <button mat-icon-button (click)="editStudent(element)">
+        <td mat-cell *matCellDef="let student">
+          <button mat-icon-button (click)="editStudent(student)">
             <mat-icon>edit</mat-icon>
           </button>
-          <button mat-icon-button color="warn" (click)="deleteStudent(element.id)">
+          <button mat-icon-button color="warn" (click)="deleteStudent(student.id)">
             <mat-icon>delete</mat-icon>
           </button>
         </td>

@@ -21,7 +21,7 @@ export class StudentsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getStudents();    
+    this.getStudents();
   }
 
   openDialog() {
@@ -39,7 +39,6 @@ export class StudentsComponent implements OnInit {
     .subscribe({
       next:(value) => {
         this.students = new MatTableDataSource(value);
-        console.log("ProjectId: "+value[1].projectId);
       },
       error:(err) => {
         alert("Error getting products");
@@ -73,7 +72,7 @@ export class StudentsComponent implements OnInit {
 
   getProjectName(id: any){
     console.log("executed!!");
-    
+
     this.api.getProjectById(id).subscribe({
       next: (res) => {
         this.projectName = res.nombre;
@@ -81,7 +80,7 @@ export class StudentsComponent implements OnInit {
       },
       error:() => {
         console.log("Error load project");
-        
+
       }
     })
   }

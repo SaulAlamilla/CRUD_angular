@@ -23,21 +23,14 @@
         </mat-form-field>
 
         <mat-form-field appearance="outline">
-            <mat-label>Proyecto</mat-label>
-            <mat-select formControlName="project" placeholder="">
-                <mat-option *ngFor="let pro of projectSelect" [value]="pro">
-                    {{pro.nombre}}
-                </mat-option>
-            </mat-select>
+          <mat-label>Proyecto</mat-label>
+            <mat-select formControlName="project">
+              <mat-option *ngFor="let pro of projectSelect" [value]="pro">
+                  {{pro.nombre}}
+              </mat-option>
+          </mat-select>
         </mat-form-field>
 
-
-        <!--<label for=""><h1>Frescura</h1></label>
-        <mat-radio-group formControlName="frescura" class="example-radio-group">
-            <mat-radio-button clas="example-radio-button" *ngFor="let fresh of frescuraList" [value]="fresh">
-                {{fresh}}
-            </mat-radio-button>
-        </mat-radio-group>-->
     </form>
 </div>
 
